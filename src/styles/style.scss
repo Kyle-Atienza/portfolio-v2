@@ -110,6 +110,9 @@
         height: clamp(300px, 40vh, 400px);
         
     }
+    #githubButton{
+        width: fit-content;
+    }
 }
 
 #contact{
