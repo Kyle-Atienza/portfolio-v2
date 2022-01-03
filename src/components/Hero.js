@@ -28,17 +28,17 @@ function Hero() {
                 <Col xs={1} className='socials mb-lg-0 mb-sm-5'>
                     <Nav className='gap-sm-5 gap-3'>
                         <Nav.Item>
-                            <Nav.Link>
+                            <Nav.Link href='https://www.linkedin.com/in/kyle-atienza-70b60b194/'>
                                 <ion-icon name="logo-linkedin"></ion-icon>
                             </Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
-                            <Nav.Link>
+                            <Nav.Link href='https://twitter.com/AtienzaKyle'>
                                 <ion-icon name="logo-twitter"></ion-icon>
                             </Nav.Link>
                         </Nav.Item> 
                         <Nav.Item>
-                            <Nav.Link>
+                            <Nav.Link href='https://github.com/Kyle-Atienza'>
                                 <ion-icon name="logo-github"></ion-icon>
                             </Nav.Link>
                         </Nav.Item>               
