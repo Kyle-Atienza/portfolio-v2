@@ -60,7 +60,7 @@ function Projects() {
                         </ul>
                     </Col>
                     <Col md={6} className='project-image p-0 bg-secondary shadow'>
-                        <img src={project2} alt="" className='img-fluid'/>
+                        <img src={project2} alt="" className='img-fluid  w-100'/>
                     </Col>
                 </Row>
                 <Row className='justify-content-end'>
@@ -86,12 +86,12 @@ function Projects() {
                         </ul>
                     </Col>
                     <Col md={6} className='project-image p-0 bg-secondary shadow'>
-                        <img src={project3} alt="" className='img-fluid'/>
+                        <img src={project3} alt="" className='img-fluid  w-100'/>
                     </Col>
                 </Row>
                 <Row>
                     <Col>
-                    <Button className='d-flex align-items-center mx-auto mt-5' id='githubButton'>
+                    <Button className='d-flex align-items-center mx-auto mt-5' id='githubButton' href='https://github.com/Kyle-Atienza'>
                         View Github
                         <ion-icon name="chevron-forward-outline"></ion-icon>
                     </Button>
