@@ -20,7 +20,7 @@ function Hero() {
                     <p className='text-md-start text-center'>Hi I'm</p>
                     <img src={name} className='header-name w-100' alt="" />
                     <p className='text-md-end text-center ms-sm-auto'>Im an IT student and Web Developer based in the Philippines.</p>
-                    <Button className='d-flex align-items-center mt-sm-5 mt-3 ms-sm-auto me-sm-0 ms-auto me-auto' id='resumeButton' href='https://drive.google.com/file/d/125o-Buz_rlHVj_msqwPKrwEojFfrOVLW/view?usp=sharing'>
+                    <Button className='d-flex align-items-center mt-sm-5 mt-3 ms-sm-auto me-sm-0 ms-auto me-auto' id='resumeButton' href='https://drive.google.com/file/d/127lF4puuCGrjucNqHXXEG8IUcbukgJ-2/view?usp=sharing'>
                         View Resume
                         <ion-icon name="chevron-forward-outline"></ion-icon>
                     </Button>
