@@ -1,0 +1,163 @@
+// variables
+$vibrant-green: #09BC8A;
+$dark-green: #172A3A;
+$white: #fff;
+
+$primary: $vibrant-green;
+$secondary: $dark-green;
+
+$jet-brains: 'JetBrains Mono', monospace;
+
+$p: clamp(1rem, 1.4vw, 1.2rem) !important;
+
+html{
+    scroll-behavior: smooth;
+}
+
+*, body {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-family: $jet-brains;
+
+    transition: all .2s ease-in-out;
+
+    position: relative
+}
+
+#app{
+    overflow-x: hidden;
+}
+
+.container-fluid{
+    padding: 0 !important;
+}
+.container{
+    position: relative;
+}
+
+
+
+// typography
+.overlay-title{
+    position: absolute;
+    font-weight: 700;
+    font-size: Max(15vw, 8rem) !important;
+    line-height: 0;
+    transform: translateX(-10%);
+    color: #09BC8A;
+    opacity: .1;
+    z-index: -1;
+}
+h1{
+    font-family: $jet-brains;
+    font-size: 6.5rem !important;
+    font-weight: 700 !important;
+}
+h2{
+    font-family: $jet-brains;
+    font-weight: 700 !important;
+    font-size: 2.5rem !important;
+}
+h3{
+    font-family: $jet-brains;
+    font-weight: 600 !important;
+    font-size: 1.8rem !important;
+}
+p,
+input,
+textarea,
+input::placeholder,
+textarea::placeholder,
+a,
+li{
+    font-family: $jet-brains;
+    font-size: $p;
+    font-weight: 400;
+}
+a{
+    text-decoration: none;
+}
+
+
+
+//navs
+.navbar-toggler:focus,
+.navbar-toggler:active {
+    border-color: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+}
+.navbar-toggler{
+    border-color: rgba(0, 0, 0, 0) !important;
+    ion-icon{
+        font-size: 2rem;
+    }
+}
+.nav-link,
+.project-links li a{
+    font-family: $jet-brains;
+    font-size: 1.2rem;
+    font-weight: 400;
+    letter-spacing: 0.3em;
+}
+
+
+
+//buttons
+.btn{
+    padding: .8em 2em !important;
+    font-family: $jet-brains;
+    font-size: $p;
+    font-weight: 400 !important;
+    letter-spacing: 0.6em;
+    text-transform: uppercase !important;
+    border-radius: 0 !important;
+    background: $secondary !important;
+    border: none !important;
+    color: $white;
+    white-space: nowrap;
+
+    ion-icon{
+        font-size: 1.5rem;
+    }
+}
+.btn:focus{
+    box-shadow: none !important;
+}
+
+
+
+//form
+.form-control{
+    border: 1px solid $secondary;
+    border-radius: 0 !important;
+}
+.form-control:focus{
+    box-shadow: none;
+    border: 1px solid $secondary;
+}
+
+
+
+//sections
+#experience,
+#projects,
+#contact,
+#footer{
+    padding-top: 12rem;
+    
+}
+
+
+
+//utilities
+.title{
+    color: $primary;
+}
+.img-fluid{
+    object-fit: cover;
+    height: 100%;
+
+}
+

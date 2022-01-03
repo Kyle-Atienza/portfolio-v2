@@ -1,0 +1,139 @@
+@import 'config';
+
+#header{
+    display: block;
+    background: $primary;
+    color: $white;
+    margin-bottom: 5em;
+    @media (max-width: 576px) { 
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+
+    a{
+        color: $white;
+    }
+    #hero{
+        flex-grow: 1;
+    }
+    .socials{
+        top: 0;
+        left: 0;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        position: absolute;
+        @media (max-width: 992px) { 
+            height: unset;
+            top: unset;
+            bottom: 0;
+            width: 100%;
+            justify-content: end;  
+        }
+        @media (max-width: 576px){
+            position: relative;
+            justify-content: center; 
+        }
+        ion-icon{
+            font-size: 1.5rem;
+        }
+    }
+    .header-image{
+        img{
+            transform: none;
+            @media (max-width: 992px) { 
+                transform: translateX(-50%);
+            }
+        }
+    }
+    .mobile-header-image img{
+        width: Max(50%, 100px);
+    }
+    .header-text{
+        position: absolute;
+        top: 50%;
+        @media (max-width: 576px) { 
+            position: relative;
+            transform: none !important;
+            top: 0;
+        }
+
+        .header-name{
+            margin-bottom: 1rem;
+        }
+    }
+}
+
+#experience{
+    .work-experience{
+        padding-left: 6em;
+        @media (max-width: 576px){
+            padding-left: 4em;
+        }
+    }
+    .work-experience::before{
+        position: absolute;
+        width: 5px;
+        top: 0;
+        left: 0;
+        height: 100%;
+        background: black;
+        content: '';
+        @media (max-width: 576px){
+            top: unset;
+            left: unset;
+            bottom: 0;
+            transform: translateX(-500%);
+        }
+    }
+}
+
+#projects{
+    .tags span{
+        border: 1px solid $secondary;
+    }
+    .project-links,
+    .repo-link,
+    .site-link{
+        list-style: none;
+        padding: 0;
+        width: min-content;
+        ion-icon{
+            font-size: 1.5rem;
+        }
+    }
+    .project-image{
+        height: clamp(300px, 40vh, 400px);
+        
+    }
+}
+
+#contact{
+    .mailto{
+        font-weight: 700;
+        color: $primary;
+    }
+    form{
+        .btn{
+            width: fit-content;
+        }
+    }
+    .socials{
+        ion-icon{
+            font-size: 1.5rem;
+            color: $secondary;
+        }
+    }
+}
+
+#footer{
+    .footer{
+        background: $primary;
+
+        ion-icon{
+            font-size: 3rem;
+            color: $white;
+        }
+    }
+}
