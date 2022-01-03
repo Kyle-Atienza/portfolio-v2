@@ -25,9 +25,6 @@
         transition: all .2s ease-in-out;
     }
     .navbar-nav{
-        a:hover{
-            // transform: translateY(-20%);
-        }
         a:hover::after{
             position: absolute;
             content: '';
