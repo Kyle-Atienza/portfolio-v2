@@ -1,6 +1,7 @@
 {
   "name": "portfolio-v2",
   "version": "0.1.0",
+  "proxy": "https://kyle-portfolio-v2-backend.herokuapp.com",
   "private": true,
   "dependencies": {
     "@notionhq/client": "^0.4.13",
