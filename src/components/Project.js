@@ -10,8 +10,12 @@ function Project({ project }) {
       >
         <h3 className="title">{project.name}</h3>
         <p className="tags d-flex gap-3">
-          {project.tags.map((tag) => {
-            return <span className="px-3 py-2">{tag}</span>;
+          {project.tags.map((tag, index) => {
+            return (
+              <span className="px-3 py-2" key={index}>
+                {tag}
+              </span>
+            );
           })}
         </p>
         <ul className="project-links d-flex gap-5 mt-lg-5 mt-2">

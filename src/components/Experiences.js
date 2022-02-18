@@ -9,7 +9,9 @@ function Experiences({ experiences }) {
         <Row className="align-items-center flex-column">
           {experiences
             ? experiences.map((experience) => {
-                return <Experience experience={experience} />;
+                return (
+                  <Experience experience={experience} key={experience.id} />
+                );
               })
             : null}
           <Col md={7} xs={12} className="work-experience position-relative">

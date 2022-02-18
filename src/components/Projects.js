@@ -11,7 +11,7 @@ function Projects({ projects }) {
         <p className="overlay-title">Works</p>
         {projects
           ? projects.map((project) => {
-              return <Project project={project} />;
+              return <Project project={project} key={project.id} />;
             })
           : null}
         <Row>
