@@ -8,6 +8,8 @@ import Contact from "../components/Contact";
 import Footer from "../components/Footer";
 
 function Home() {
+  axios.defaults.baseURL = `${process.env.REACT_APP_AXIOS_BASE_URL}`;
+
   const [experiences, setExperiences] = useState([]);
   const [projects, setProjects] = useState([]);
 

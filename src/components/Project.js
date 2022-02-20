@@ -9,7 +9,7 @@ function Project({ project }) {
         className="project-details d-flex flex-column justify-content-center"
       >
         <h3 className="title">{project.name}</h3>
-        <p className="tags d-flex gap-3">
+        <p className="tags d-flex gap-3 flex-wrap">
           {project.tags.map((tag, index) => {
             return (
               <span className="px-3 py-2" key={index}>

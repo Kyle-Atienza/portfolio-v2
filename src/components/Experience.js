@@ -2,7 +2,6 @@ import React from "react";
 import { Col } from "react-bootstrap";
 
 function Experience({ experience }) {
-  console.log(experience);
   return (
     <Col
       md={7}
