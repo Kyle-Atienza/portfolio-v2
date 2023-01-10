@@ -133,6 +133,9 @@
   .project-image {
     height: clamp(300px, 40vh, 400px);
   }
+  .project-description {
+    font-size: 0.9rem !important;
+  }
   #githubButton {
     width: fit-content;
   }
