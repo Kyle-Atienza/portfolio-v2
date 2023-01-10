@@ -31,7 +31,7 @@ function Hero() {
           <Button
             className="d-flex align-items-center mt-sm-5 mt-3 ms-sm-auto me-sm-0 ms-auto me-auto"
             id="resumeButton"
-            href="https://drive.google.com/file/d/127lF4puuCGrjucNqHXXEG8IUcbukgJ-2/view?usp=sharing"
+            href="https://drive.google.com/file/d/1q_TsjHfz5yiycMtSRdeymPEaxWw84gE4/view?usp=share_link"
           >
             View Resume
             <ion-icon name="chevron-forward-outline"></ion-icon>
