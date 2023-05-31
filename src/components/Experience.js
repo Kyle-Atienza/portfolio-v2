@@ -11,7 +11,7 @@ function Experience({ experience }) {
     >
       <h3 className="title">{experience.name}</h3>
       <p>{experience.position}</p>
-      <p>{`${experience.start} - ${experience.end}`}</p>
+      <p>{`${experience.start} - ${experience.end ? experience.end : 'Ongoing'}`}</p>
       <ul className="experiences">
         {experience.description
           ? experience.description.map((data, index) => {
