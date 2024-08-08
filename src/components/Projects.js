@@ -2,18 +2,22 @@ import React from "react";
 
 import Project from "./Project";
 
-import { Container, Row, Col, Button } from "react-bootstrap";
+import { Container, Row, Col, Button, Spinner } from "react-bootstrap";
 
 function Projects({ projects }) {
   return (
     <section id="projects">
       <Container className="position-relative d-flex flex-column gap-5">
         <p className="overlay-title">Works</p>
-        {projects
-          ? projects.map((project) => {
-              return <Project project={project} key={project.id} />;
-            })
-          : null}
+        {projects.length ? (
+          projects.map((project) => {
+            return <Project project={project} key={project.id} />;
+          })
+        ) : (
+          <Row className="align-items-center flex-column">
+            <Spinner animation="border" />
+          </Row>
+        )}
         <Row>
           <Col>
             <Button
